@@ -12,7 +12,7 @@ class GreetingController @Inject()(cc: ControllerComponents) extends AbstractCon
   private implicit val ec: ExecutionContext = cc.executionContext
 
   def greet: Action[AnyContent] = Action.async {
-    Future(Ok(Json.parse("""{"message": "Welcome" }""")))
+    Future(Ok(Json.parse("""{"message": "Welcome to demo app" }""")))
   }
 
 }

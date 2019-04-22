@@ -20,7 +20,7 @@ class GreetingControllerSpec extends PlaySpec with GuiceOneAppPerTest {
 
       status(greeting) mustBe OK
       contentType(greeting) mustBe Some("application/json")
-      contentAsString(greeting) mustBe """{"message":"Welcome"}"""
+      contentAsString(greeting) mustBe """{"message":"Welcome to demo app"}"""
     }
   }
 
